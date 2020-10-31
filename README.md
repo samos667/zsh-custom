@@ -2,9 +2,9 @@
 
 2. cd zsh-custom
 
-3. chmod +x ./install.sh
+3. chmod +x ./install_zsh.sh
 
-4. ./install.sh
+4. ./install_zsh.sh
 
 5. CTRL+D when zsh prompt appears for the 1st time
 
