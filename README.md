@@ -1,3 +1,7 @@
+git clone https://github.com/samos667/zsh-custom.git
+
+cd zsh-custom
+
 chmod +x ./install.sh
 
 ./install.sh
