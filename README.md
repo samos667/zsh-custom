@@ -1,13 +1,13 @@
-git clone https://github.com/samos667/zsh-custom.git
+1. git clone https://github.com/samos667/zsh-custom.git
 
-cd zsh-custom
+2. cd zsh-custom
 
-chmod +x ./install.sh
+3. chmod +x ./install.sh
 
-./install.sh
+4. ./install.sh
 
-CTRL+D when zsh prompt appears for the 1st time
+5. CTRL+D when zsh prompt appears for the 1st time
 
-logout and login when install is done
+6. logout and login when install is done
 
-enjoy
+7. enjoy
