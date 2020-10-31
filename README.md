@@ -8,4 +8,6 @@ chmod +x ./install.sh
 
 CTRL+D when zsh prompt appears for the 1st time
 
+logout and login when install is done
+
 enjoy
