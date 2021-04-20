@@ -23,3 +23,5 @@ source $ZSH/oh-my-zsh.sh
  	TERM=xterm-256color
 
 	fpath=(~/.zsh/completion $fpath)
+	fpath+=($ZSH/plugins/docker)
+        autoload -U compinit && compinit
