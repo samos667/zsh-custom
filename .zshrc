@@ -10,18 +10,14 @@ source $ZSH/oh-my-zsh.sh
  ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%} ✓%{$reset_color%}"
 
  function prompt_char {
- 	if [ $UID -eq 0 ]; then echo "#"; else echo $; fi
- 	}
+        if [ $UID -eq 0 ]; then echo "#"; else echo $; fi
+        }
 
- 	PROMPT='[%{$fg[red]%}%n%{$reset_color%}:%{$fg[magenta]%}%c%{$reset_color%}%{$fg[gray]%}$(git_prompt_info)]%{$fg[yellow]%}$(prompt_char)%{$reset_color%} '
+        PROMPT='%{$fg[blue]%}[%T]%{$reset_color%}[%{$fg[red]%}%n%{$reset_color%}:%{$fg[magenta]%}%c%{$reset_color%}%{$fg[gray]%}$(git_prompt_info)]%{$fg[yellow]%}$(prompt_char)%{$reset_color%} '
 
- 	RPROMPT='$FG[059][%~]$FG[059][%D/%*]%(?,$FG[022][R-$?],$FG[130][$?])$FG[024][!%!]%{$reset_color%}'
+        RPROMPT='$FG[059][%~]$FG[059][%D/%*]%(?,$FG[022][R-$?],$FG[130][$?])$FG[024][!%!]%{$reset_color%}'
 
- 	# Auto suggestion
- 	source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh  
- 	ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=22"
- 	TERM=xterm-256color
-
-	fpath=(~/.zsh/completion $fpath)
-	fpath+=($ZSH/plugins/docker)
-        autoload -U compinit && compinit
+        # Auto suggestion
+        source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+        ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=22"
+        TERM=xterm-256color
