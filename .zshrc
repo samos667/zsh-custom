@@ -1,5 +1,6 @@
 export ZSH=$HOME/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
+source <(kubectl completion zsh)
 # Theme
  ZSH_THEME_GIT_PROMPT_PREFIX=" (%{$fg[green]%}"
  ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%})"
@@ -13,7 +14,7 @@ source $ZSH/oh-my-zsh.sh
         if [ $UID -eq 0 ]; then echo "#"; else echo $; fi
         }
 
-        PROMPT='%{$fg[blue]%}[%T]%{$reset_color%}[%{$fg[red]%}%n%{$reset_color%}:%{$fg[magenta]%}%c%{$reset_color%}%{$fg[gray]%}$(git_prompt_info)]%{$fg[yellow]%}$(prompt_char)%{$reset_color%} '
+        PROMPT='[%{$fg[red]%}%n@%m%{$reset_color%}:%{$fg[magenta]%}%c%{$reset_color%}%{$fg[gray]%}$(git_prompt_info)]%{$fg[yellow]%}$(prompt_char)%{$reset_color%} '
 
         RPROMPT='$FG[059][%~]$FG[059][%D/%*]%(?,$FG[022][R-$?],$FG[130][$?])$FG[024][!%!]%{$reset_color%}'
 
