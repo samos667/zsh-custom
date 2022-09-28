@@ -22,3 +22,5 @@ source $ZSH/oh-my-zsh.sh
         source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
         ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=22"
         TERM=xterm-256color
+        # For kubectl completion
+        #source <(kubectl completion zsh)
